@@ -6,12 +6,12 @@
 
 ##  Demo en Producción
 
-🔗 **Frontend**: [https://dragandlist.netlify.app](https://dragandlist.netlify.app)  
-🔗 **Backend (API)**: [https://dragandlist-backend.onrender.com](https://dragandlist-backend.onrender.com)
+ **Frontend**: [https://dragandlist.netlify.app](https://dragandlist.netlify.app)  
+ **Backend (API)**: [https://dragandlist-backend.onrender.com](https://dragandlist-backend.onrender.com)
 
 ---
 
-## 🧰 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 ### Frontend:
 -  React + Vite
@@ -39,7 +39,7 @@
 
 
 
-## 📁 Estructura del repositorio
+##  Estructura del repositorio
 dragandlist_frontend/ 
 │ ├── src/ 
 │ ├── components/ 
@@ -54,3 +54,30 @@ dragandlist_frontend/
 ├── .env 
 └── README.md
 
+ dragandlist_backend/
+│
+├── database/
+│   └── connection.js        # Configura y conecta a PostgreSQL
+│
+├── models/
+│   ├── board.model.js       # Lógica y queries para tableros
+│   ├── list.model.js        # Lógica y queries para listas
+│   └── task.model.js        # Lógica y queries para tareas
+│
+├── routes/
+│   ├── board.routes.js      # Rutas para /boards
+│   ├── list.routes.js       # Rutas para /lists
+│   └── task.routes.js       # Rutas para /tasks
+│
+├── .env                     # Variables de entorno
+├── index.js                 # Archivo principal, inicia el servidor
+├── package.json
+└── README.md
+
+Tecnologías backend:
+- Express (con módulos ES6)
+- PostgreSQL
+- pg para conexión y consultas SQL
+- dotenv para variables de entorno
+- cors configurado para producción
+- Estructura modular y ordenada para escalar
